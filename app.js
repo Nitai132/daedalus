@@ -12,16 +12,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    database: 'daedalus'
-  }).then(connection => {
-      global.mysqlConnection = connection;
+// mysql.createConnection({
+//     host: 'localhost',
+//     user: 'root',
+//     database: 'daedalus'
+//   }).then(connection => {
+//       global.mysqlConnection = connection;
       app.listen({port}, () => {
             console.log(`app is on port: ${port}`);
       });
-  });
+  // });
 
 app.use('/', mainController);
 
