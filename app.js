@@ -30,7 +30,7 @@ mysql.createConnection({
       password: '2ca1b309',
       database: 'heroku_4a5144a55c9bce4'
     }).then(connection => {
-        global.mysqlConnection = connection;
+        mysqlConnection = connection;
 });
 
 
