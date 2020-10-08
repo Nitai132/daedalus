@@ -34,7 +34,7 @@ let connection;
 
 function handleDisconnect() {
     console.log('1. connecting to db:');
-    global.connection = mysql.createConnection(db_config); 
+    connection = mysql.createConnection(db_config); 
 											
 
     connection.connect(function(err) {             
