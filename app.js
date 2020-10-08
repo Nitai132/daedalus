@@ -35,7 +35,7 @@ connection.connect();
 
 
 
-app.use('/', mainController);
+app.use('https://gentle-caverns-40728.herokuapp.com/', mainController);
 
 app.listen({port}, () => {
       console.log(`app is on port: ${port}`);
