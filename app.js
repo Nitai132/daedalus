@@ -30,7 +30,6 @@ mysql.createConnection({
       database: 'heroku_4a5144a55c9bce4'
     }).then(connection => {
         global.mysqlConnection = connection;
-        console.log(connection)
       }).catch(err => {
             console.log(err)
 })
