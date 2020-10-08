@@ -31,7 +31,7 @@ mysql.createConnection({
     }).then(connection => {
         global.mysqlConnection = connection;
       }).catch(err => {
-            console.log(err)
+            console.log(err, 1)
 })
 
 
